@@ -9,10 +9,6 @@ import { HeroService } from '../hero.service';
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
-  // hero: Hero = {
-  //   id: 1,
-  //   name: 'Ms. Fantastic'
-  // };
 
   heroes: Hero[];
 
@@ -23,7 +19,8 @@ export class HeroesComponent implements OnInit {
   }
 
   getHeroes(): void {
-    this.heroes = this.heroService.getHeroes();
+    this.heroService.getHeroes()
+        .subscribe(heroes => this.heroes = heroes);
   }
 
   constructor(private heroService: HeroService) { }
