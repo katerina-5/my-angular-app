@@ -4,8 +4,8 @@ import { HEROES } from './mock-heroes';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './heroes.component.html',
-  styleUrls: ['./heroes.component.css']
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
   
   // selector— the component's CSS element selector
   // templateUrl— the location of the component's template file.
