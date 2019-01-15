@@ -15,12 +15,4 @@ import { HEROES } from './mock-heroes';
 
 export class AppComponent {
   title = 'My First Angular App!';
-
-  heroes = HEROES;
-
-  selectedHero: Hero;
-  
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-  }
 }
